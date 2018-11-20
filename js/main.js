@@ -10,7 +10,7 @@ function writeCssTextIntoPageAndStyleTag(prefix, cssStyle, fn) {
       styleTag.innerHTML = cssHtml;
       codeViewer.innerHTML = Prism.highlight(cssHtml, Prism.languages.css, 'css');
       codeViewer.scrollTop = codeViewer.scrollHeight
-      setTimeout(callback, 50);
+      setTimeout(callback, 10);
     } else {
       fn && fn();
     }
@@ -49,7 +49,7 @@ function sayWorkDone() {
 }
 
 var css1 = `/* 
- * 面试官你好，我是XXX
+ * 面试官你好，我是 Nat Chen
  * 只用文字作做我介绍太单调了
  * 我就用代码来介绍吧
  * 首先准备一些样式
@@ -103,50 +103,26 @@ var css3 = `
 
 var md = `
 ## 自我介绍
-我叫 Nat Chen
-1992 年月出生
-自学前端半年
-希望应聘前端开发岗位
+我叫 Nat Chen，1992 年月出生，自学前端半年，希望应聘前端开发岗位
+
 ## 技能介绍
-熟悉 JavaScript CSS
+掌握 HTML + CSS + JS, 熟悉 Vue 与 React
+
 ## 项目介绍
-1. XXX 轮播
-2. XXX 简历
-3. XXX 画板
+1. 有赞商城
+2. UI 组件
+3. 在线便利贴
 
 ## 联系方式
-* QQ xxxxxxxx
-* Email xxxxxxxx
-* 手机 xxxxxxx
+* Email chen_natalie@outlook.com
+* 手机 18665949858
 
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
-## 联系方式
-- QQ xxxxxxxx
-- Email xxxxxxxx
-- 手机 xxxxxxx
+## 链接
+* [个人网站](https://natchen.cn)
+* [博客](https://nat-chen.github.io)
+* [Github](https://github.com/nat-chen)
+
+> 如果你也喜欢这种动态简历，欢迎 fork me，给你个大大的👍
 `
 
 writeCssTextIntoPageAndStyleTag('', css1, writeMdTextIntoPage);

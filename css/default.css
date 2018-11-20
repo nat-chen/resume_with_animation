@@ -1,10 +1,13 @@
 *{margin: 0;padding: 0;}
 *{box-sizing: border-box;}
+.token.comment{
+  color: #fff !important;
+}
 .token.selector{
-  color: black;
+  color: #f8b500 !important;
 }
 .token.property{
-  color: black;
+  color: #53cde2 !important;
 }
 .token.function{
   color: black;
@@ -14,14 +17,20 @@
   height: 100vh;
   display: flex;
 }
+
 #code{
   width: 100%;
   overflow: hidden;
+  background: #343434;
+  color: #ff7e67 !important;
 }
 #paper{
-  background: #444; padding: 16px;
-  position: fixed; width: 50%; height: 100%; right: 0;
-  display: flex; align-items: flex-start;
+  background: #ea8a8a; 
+  padding: 16px;
+  position: fixed; width: 50%; 
+  height: 100%; right: 0;
+  display: flex; 
+  align-items: flex-start;
 }
 /* #paper > .content{
   width: 100%;
@@ -32,7 +41,7 @@
   display: none;
 } */
 #paper > .html{
-  background: white;
+  background: #ffe867;
   width: 100%;
   height: 100%;
   padding: 16px;
@@ -40,9 +49,9 @@
 }
 @keyframes breath{
   0%{
-    box-shadow: 0 0 10px rgba(0,0,0,1)
+    box-shadow: 0 0 10px #ece8d9;
   }
   100%{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    box-shadow: 0 0 10px #000;
   }
 }
